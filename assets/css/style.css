@@ -4,3 +4,24 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: ;
+    background-image: url(../img/cork.png);
+}
+
+header{
+    background-image: url(../img/wall.png);
+    padding: 1rem;
+}
+
+.my-row{
+    padding: 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+.my-card{
+    border: none !important;
+}

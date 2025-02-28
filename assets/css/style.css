@@ -5,13 +5,32 @@
 }
 
 body{
-    font-family: ;
     background-image: url(../img/cork.png);
 }
 
+/* Header */
 header{
+    font-family: Edu Tas Beginner, sans-serif;
     background-image: url(../img/wall.png);
     padding: 1rem;
+}
+
+/* End Header */
+
+/* Main */
+
+main{
+    font-family:  Sometype Mono, monospace;
+}
+
+small{
+    color: #7b7a7d;
+}
+
+.title{
+    font-family: Edu Tas Beginner, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .my-row{
@@ -25,3 +44,4 @@ img{
 .my-card{
     border: none !important;
 }
+/* End Main */

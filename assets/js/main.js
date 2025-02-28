@@ -10,14 +10,17 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         console.log(data);
 
         // Create a forEach loop to generate images from the API
+        // Select the array "data" for using forEach
         data.forEach(element => {
+            console.log(element);
+
             console.log(element.url);
+            // Use the row for writing inside in HTML code with template literal with element variable
             rowEl.innerHTML += ` <div class="col pb-3">
                     <div class="card my-card">
                         <div class="card-body">
                             <div class="cork-container">
                                 <img class="cork" src="./assets/img/pin.svg" alt="">
-
                             </div>
                             <h3 class="card-title card-header"><img class="my-img" src="${element.url}" alt=""></h3>
                             <small>${element.date}</small>
@@ -32,7 +35,4 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         console.error(error);
 
     })
-
-
-console.log(cardHeaderEl.innerHTML);
 

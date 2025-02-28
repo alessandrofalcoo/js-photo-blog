@@ -15,6 +15,13 @@ header{
     padding: 1rem;
 }
 
+.title{
+    padding: 1rem 0 0 0;
+    font-size: 75px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
 /* End Header */
 
 /* Main */
@@ -27,7 +34,7 @@ small{
     color: #7b7a7d;
 }
 
-.title{
+.titles{
     font-family: Edu Tas Beginner, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -43,5 +50,6 @@ img{
 
 .my-card{
     border: none !important;
+    border-radius: 0 !important;
 }
 /* End Main */

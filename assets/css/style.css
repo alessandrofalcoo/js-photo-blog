@@ -30,6 +30,10 @@ main{
     font-family:  Sometype Mono, monospace;
 }
 
+
+
+
+
 small{
     color: #7b7a7d;
 }
@@ -42,6 +46,21 @@ small{
 
 .my-row{
     padding: 2rem;
+}
+
+.my-img{
+    position: relative;
+    bottom: 25px;
+}
+
+.cork-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 22px;
+    .cork{
+        width: 10%;
+    }
 }
 
 img{

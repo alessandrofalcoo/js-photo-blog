@@ -83,19 +83,17 @@ img{
     display: flex;
     flex-direction: column;
 
-    .btn{
-        display: flex;
+    .my-button{
         align-self: center;
-        max-width: fit-content;
+        padding: 0.25rem;
         background-color: white;
         font-family: sans-serif;
         margin: 1rem;
     }
     .hidden-img{
-        display: flex;
         align-self: center;
-        max-height: 600px;
-        max-width: 600px;
+        max-height: 500px;
+        max-width: 500px;
     }
 }
 

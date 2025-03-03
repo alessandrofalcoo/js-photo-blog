@@ -97,6 +97,15 @@ img{
     }
 }
 
+.my-card{
+    &:hover{
+        transform:rotate(10deg);
+        .cork{
+            display: none;
+        }
+    }
+}
+
 /* End Main */
 
 

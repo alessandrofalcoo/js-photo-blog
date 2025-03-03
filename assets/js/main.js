@@ -3,6 +3,11 @@
 const rowEl = document.querySelector('.row')
 const hiddenEl = document.getElementById('hidden-div')
 const buttonEl = document.getElementById('my-button')
+buttonEl.addEventListener('click', () => {
+    console.log(buttonEl);
+
+    hiddenEl.classList.add('d-none')
+})
 // Use the fetch for the API 
 fetch('https://lanciweb.github.io/demo/api/pictures/')
     .then(response => response.json())
@@ -36,11 +41,6 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
                 hiddenEl.innerHTML += `        
             <img class="hidden-img" src="${thisEl}" alt="">`
             })
-        })
-        const buttonEl = document.getElementById('my-button').addEventListener('click', () => {
-            console.log(buttonEl);
-
-            hiddenEl.classList.add('d-none')
         })
     })
 

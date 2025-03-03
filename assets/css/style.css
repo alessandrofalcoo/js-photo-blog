@@ -54,7 +54,7 @@ small{
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 15px;
+    bottom: 25px;
     .cork{
         align-self: center;
         width: 15%;
@@ -63,8 +63,7 @@ small{
 
 img{
     vertical-align: middle;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .my-card{
@@ -102,7 +101,7 @@ img{
 
 .my-card{
     &:hover{
-        transform: scale(1.2, 1.2);
+        transform: scale(1.3, 1.2);
         rotate: 10deg;
         box-shadow: 20px 20px 10px rgba(128, 128, 128, 0.589);
         .cork{

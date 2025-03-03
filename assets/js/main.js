@@ -39,14 +39,14 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         })
         const buttonEl = document.getElementById('my-button').addEventListener('click', () => {
             console.log(buttonEl);
-            
-                hiddenEl.classList.add('d-none')
-            })
+
+            hiddenEl.classList.add('d-none')
+        })
     })
 
-/* .catch(error => {
-    console.error(error);
-    
-    }) */
+    .catch(error => {
+        console.error(error);
+
+    })
 
 

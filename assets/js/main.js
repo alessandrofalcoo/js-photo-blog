@@ -1,7 +1,8 @@
 
 // Select the row
 const rowEl = document.querySelector('.row')
-
+const hiddenEl = document.querySelector('.hidden-div')
+const buttonEl = document.querySelector('.my-button')
 
 // Use the fetch for the API 
 fetch('https://lanciweb.github.io/demo/api/pictures/')
@@ -24,14 +25,24 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
                         </div>
                     </div>
                 </div>`
-        });
+        })
+        const imgEl = document.querySelectorAll('.my-img')
+        console.log(imgEl);
+        imgEl.forEach(element => {
+            console.log(element);
+            element.addEventListener('click', function () {
+                hiddenEl.classList.remove('d-none');
 
+            })
+        })
     })
 
-    .catch(error => {
-        console.error(error);
+/* .catch(error => {
+    console.error(error);
+    
+    }) */
 
-    })
-
-
+buttonEl.addEventListener('click', function () {
+    hiddenEl.classList.add('d-none')
+})
 

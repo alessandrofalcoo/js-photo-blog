@@ -69,6 +69,36 @@ img{
     border-radius: 0 !important;
 }
 
+.hidden-div{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .btn{
+        display: flex;
+        align-self: center;
+        max-width: fit-content;
+        background-color: white;
+        font-family: sans-serif;
+        margin: 1rem;
+    }
+    .hidden-img{
+        display: flex;
+        align-self: center;
+        max-height: 600px;
+        max-width: 600px;
+    }
+}
+
 /* End Main */
 
 

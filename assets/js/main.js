@@ -7,14 +7,10 @@ const rowEl = document.querySelector('.row')
 fetch('https://lanciweb.github.io/demo/api/pictures/')
     .then(response => response.json())
     .then(data => {
-        console.log(data);
-
         // Create a forEach loop to generate images from the API
         // Select the array "data" for using forEach
         data.forEach(element => {
             console.log(element);
-
-            console.log(element.url);
             // Use the row for writing inside in HTML code with template literal with element variable
             rowEl.innerHTML += ` <div class="col pb-3">
                     <div class="card my-card">
@@ -29,10 +25,13 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
                     </div>
                 </div>`
         });
+
     })
 
     .catch(error => {
         console.error(error);
 
     })
+
+
 

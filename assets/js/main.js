@@ -28,15 +28,20 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         const imgEl = document.querySelectorAll('.my-img')
         console.log(imgEl);
         imgEl.forEach(element => {
-            console.log(element);
-            const thisEl = element.src
-            console.log(thisEl);
             element.addEventListener('click', function () {
+                const thisEl = element.src;
                 hiddenEl.classList.remove('d-none');
-                hiddenEl.innerHTML += `        
-            <img class="hidden-img" src="${thisEl}" alt="">`
-            })
-        })
+                hiddenEl.innerHTML = `        
+                    <button type="button" id="my-button">Chiudi</button>
+                    <img class="hidden-img" src="${thisEl}" alt="">
+                `;
+
+                // Riassegna l'event listener al nuovo bottone
+                document.getElementById('my-button').addEventListener('click', () => {
+                    hiddenEl.classList.add('d-none');
+                });
+            });
+        });
     })
 
     .catch(error => {
